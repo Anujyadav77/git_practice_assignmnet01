@@ -1,11 +1,18 @@
-function myfunction(num){
+function myfunction(number){
+	let count = 0;
 for(let i = 1;i<=num;i++){
 if(num%i==0){
-return true;	
+	count++;	
+} 
+} if(count==2){
+	return true;
 } else{
-return false;	
-}
+	return false;
 }	
 }
 let ans = myfunction(13);
-console.log(ans);
+if(ans == true){
+	console.log('prime nomber')
+} else{
+	console.log('not a prime nomber' );
+}
